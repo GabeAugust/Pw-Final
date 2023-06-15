@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-calendar.css">
+    <title>Document</title>
+</head>
+<body>
+      <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-link" href="index.html">INICIAL</a>
+            <a class="cabecalho-menu-link" href="metodos.html">MÉTODOS</a>
+            <a href="about.html" class="cabecalho-menu-link">SOBRE</a>
+        </nav>
+        <div class="chec">
+            <input type="checkbox" class="checkbox" id="chkc" name="theme">
+            <label class="label" for="chkc">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left">
+          <div class="calendar">
+            <div class="month">
+              <i class="fas fa-angle-left prev"></i>
+              <div class="date">december 2015</div>
+              <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+              <div>Dom</div>
+              <div>Seg</div>
+              <div>Ter</div>
+              <div>Qua</div>
+              <div>Quin</div>
+              <div>Sex</div>
+              <div>Sab</div>
+            </div>
+            <div class="days"></div>
+            <div class="goto-today">
+              <div class="goto">
+                <input type="text" placeholder="mm/yyyy" class="date-input" />
+                <button class="goto-btn">Ir</button>
+              </div>
+              <button class="today-btn">Hoje</button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="today-date">
+            <div class="event-day">Qua</div>
+            <div class="event-date">12th dezembro 2022</div>
+          </div>
+          <div class="events"></div>
+          <div class="add-event-wrapper">
+            <div class="add-event-header">
+              <div class="title">Adicionar Evendo</div>
+              <i class="fas fa-times close"></i>
+            </div>
+            <div class="add-event-body">
+              <div class="add-event-input">
+                <input type="text" placeholder="Nome do evento" class="event-name" />
+              </div>
+              <div class="add-event-input">
+                <input
+                  type="text"
+                  placeholder="Horário incial do evento"
+                  class="event-time-from"
+                />
+              </div>
+              <div class="add-event-input">
+                <input
+                  type="text"
+                  placeholder="Horário de término do evento"
+                  class="event-time-to"
+                />
+              </div>
+            </div>
+            <div class="add-event-footer">
+              <button class="add-event-btn">Adicionar Evento</button>
+            </div>
+          </div>
+        </div>
+        <button class="add-event">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+      <script src="script2.js"></script>
+      <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  
+      <div class="credits">
+  <p>
+          Watch Tutorial on Youtube
+          <a href="https://youtu.be/6EVgmpm4z5U" target="_blank">Open Source Coding</a>
+        </p>
+      </div>
+</body>
+</html>
